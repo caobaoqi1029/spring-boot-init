@@ -87,6 +87,7 @@ services:
         ports:
             - "9200:9200"
         environment:
+            ELASTIC_PASSWORD: root
             xpack.security.enabled: "false"
             bootstrap.memory_lock: "true"
             discovery.type: "single-node"

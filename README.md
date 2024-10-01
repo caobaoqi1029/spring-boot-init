@@ -114,7 +114,7 @@ spring:
         password: root
 ```
 
-2）复制 `sql/post_es_mapping.json` 文件中的内容，通过调用 Elasticsearch 的接口或者 Kibana Dev Tools 来创建索引（相当于数据库建表）
+2）复制 `es/post_es_mapping.json` 文件中的内容，通过调用 Elasticsearch 的接口或者 Kibana Dev Tools 来创建索引（相当于数据库建表）
 
 ```
 PUT post_v1
@@ -140,7 +140,7 @@ PUT post_v1
 
 ```
 // 指定生成参数
-String packageName = "com.yupi.springbootinit";
+String packageName = "com.mcddhub.init";
 String dataName = "用户评论";
 String dataKey = "userComment";
 String upperDataKey = "UserComment";
